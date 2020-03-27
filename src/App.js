@@ -69,7 +69,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.getAllCustomer();
+    //this.getAllCustomer();
   }
 
   render() {
