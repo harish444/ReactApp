@@ -24,7 +24,7 @@ class App extends React.Component {
   getAllCustomer = () => {
 
     axios
-      .get("http://giltedge.in/cronjob")
+      .get("https://giltedge.in/cronjob")
       .then(response => {
         this.setState({ customers: response.data });
         this.endLoading();
