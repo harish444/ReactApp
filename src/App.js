@@ -22,6 +22,7 @@ class App extends React.Component {
     document.getElementById("waiting").style.transform = 'scale(0)';
   }
   getAllCustomer = () => {
+
     axios
       .get("http://giltedge.in/cronjob")
       .then(response => {
