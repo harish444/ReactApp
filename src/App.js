@@ -1,6 +1,6 @@
 import React from "react";
 import Loader from './components/Loader';
-import List_Customer from "./components/List_Customer";
+import ListCustomer from "./components/ListCustomer";
 import axios from "axios";
 import MyForm from "./components/MyForm";
 class App extends React.Component {
@@ -85,7 +85,7 @@ class App extends React.Component {
             customer={this.state.customer}
             onFormSubmit={this.onFormSubmit}
           />
-          <List_Customer
+          <ListCustomer
             customers={this.state.customers}
             onHandleDelete={this.onHandleDelete}
             onHandleUpdate={this.onHandleUpdate}
