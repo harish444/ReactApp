@@ -22,9 +22,8 @@ class App extends React.Component {
     document.getElementById("waiting").style.transform = 'scale(0)';
   }
   getAllCustomer = () => {
-
     axios
-      .get("https://giltedge.in/cronjob")
+      .get("http://localhost/api/customers")
       .then(response => {
         this.setState({ customers: response.data });
         this.endLoading();
@@ -70,7 +69,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    this.getAllCustomer();
+    //this.getAllCustomer();
   }
 
   render() {
@@ -79,7 +78,7 @@ class App extends React.Component {
       <Loader/>
       <div className="card ">
         <div className="card-header shadow bg-primary text-white text-center mb-2 font-weight-bold">
-          My First React App [Harish]
+          My First React App [harish]
         </div>
         <div className="card-body">
           <MyForm
