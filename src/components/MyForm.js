@@ -66,16 +66,16 @@ class MyForm extends Component {
       <div className="container">
         <form onSubmit={this.onFormSubmit} className="mb-3">
           <div className="row justify-content-center">
-            <div className="col-sm-3">
+            <div className="col-sm-3 p-2">
                 <input type="text" value={name} className="form-control" name="name" placeholder="name" onChange={this.handleChange}/>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 p-2">
                 <input type="number" value={mobile}  className="form-control" name="mobile" placeholder="mobile" onChange={this.handleChange}/>
             </div>
-            <div className="col-sm-3">
+            <div className="col-sm-3 p-2">
                 <input type="email" value={email}  className="form-control" name="email" placeholder="email" onChange={this.handleChange}/>
             </div>
-            <div className="col-sm-1">
+            <div className="col-sm-3 p-2 text-right text-sm-left">
     <button type="submit" className={this.state.btnClass}> {this.state.btnName}</button>
             </div>
             </div>
