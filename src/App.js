@@ -7,7 +7,7 @@ class App extends React.Component {
   state = {
     customers: [],
     customer: {},
-    url: "http://cronner.dx.am/api/customers"
+    url: "https://cronner.dx.am/api/customers"
   };
   showMessage=(massage)=>{
     document.getElementById("dialogoverlay").style.opacity = 1;
