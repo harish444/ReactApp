@@ -7,7 +7,7 @@ class App extends React.Component {
   state = {
     customers: [],
     customer: {},
-    url: "http://localhost/api/customers"
+    url: "http://cronner.dx.am/api/customers"
   };
   showMessage=(massage)=>{
     document.getElementById("dialogoverlay").style.opacity = 1;
@@ -23,8 +23,9 @@ class App extends React.Component {
   }
   getAllCustomer = () => {
     axios
-      .get("http://localhost/api/customers")
+      .get(this.state.url)
       .then(response => {
+        //console.log('ithelper data',response.data);
         this.setState({ customers: response.data });
         this.endLoading();
       })
@@ -69,7 +70,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    //this.getAllCustomer();
+    this.getAllCustomer();
   }
 
   render() {
